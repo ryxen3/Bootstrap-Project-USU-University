@@ -1,0 +1,71 @@
+.bg-yellow {
+  background-color: #ffdf00;
+}
+
+.button-yellow {
+  width: 350px;
+  background-color: #ffdf00;
+}
+
+.title-height {
+  height: 100px;
+}
+
+.card-text {
+  height: 50px;
+}
+
+/* fix carousel positioning */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+/* carousel-indicators */
+.carousel-indicators [data-bs-target] {
+  width: 12px;              
+  height: 12px;
+  border-radius: 50%;       
+  background-color: #00000000; 
+  border: 3px solid #ffffff;   
+}
+
+.carousel-indicators .active {
+  background-color: #ffffff;
+}
+
+/* fit image */
+.center-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-title {
+  font-size: 96px;
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-yellow {
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-yellow {
+    width: 250px;
+  }
+
+  .promotional-images {
+    padding: 0px;
+  }
+}
+
