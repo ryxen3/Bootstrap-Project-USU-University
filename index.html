@@ -17,97 +17,118 @@
 
     <!-- navbar -->
     <nav class="navbar bg-yellow">
-        <div class="container-fluid px-4">
+        <div class="container-xxl">
             <a class="navbar-brand">
                 <img src="assets\images\usu_logo.png" class="img-fluid w-auto" style="height: 40px;">
             </a>
             <div class="d-flex align-items-center">
-                <div class="d-none d-md-flex align-items-center">
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#desktopSearch">
+
+                <!-- search bar -->
+                <form class="search-box position-relative d-flex align-items-center">
+                    <div class="collapse" id="searchCollapsed">
+                        <input type="search" class="border-0 rounded-0 search-input">
+                    </div>
+                    <button class="btn rounded-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#searchCollapsed">
                         <i class="bi bi-search fs-3"></i>
                     </button>
-                    <div class="collapse" id="desktopSearch">
-                        <form class="d-flex">
-                            <input class="form-control" type="search" placeholder="Search">
-                        </form>
-                    </div>
-                </div>
+                </form>
 
-                <!-- Menu button -->
-                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#menuPanel">
+
+                <!-- menu button -->
+                <button class="btn menu-button" type="button" data-bs-toggle="collapse" data-bs-target="menuCollapsed">
                     <i class="bi bi-list fs-1"></i>
                 </button>
+
             </div>
         </div>
     </nav>
 
-    <!-- carousel -->
-    <div id="carouselExample" class="carousel slide mb-5" data-bs-ride="carousel">
+    <!-- Top carousel -->
+    <div id="carouselTop" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselTop" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselTop" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselTop" data-bs-slide-to="2"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="20000">
+
+            <!-- carousel 1 -->
+            <div class="carousel-item active" data-bs-interval="5000">
                 <img src="assets\images\Websitehomepageheader.jpg" class="mx-auto d-none d-md-block w-100 center-image">
                 <img src="assets\images\WebsitehomepageheaderMobile.jpg"
                     class="mx-auto d-block d-md-none w-100 center-image img-fluid">
                 <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center h-100">
-                    <h1 class="hero-title fw-bold mb-4">USU COVID-19 UPDATE</h1>
-                    <a href="" class="btn button-yellow fw-bold fs-5 px-5 rounded-0">READ LATEST UPDATE</a>
+                    <h1 class="hero-title fw-bold">USU COVID-19 UPDATE</h1>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">READ LATEST UPDATE</a>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="20000">
+
+            <!-- carousel 2 -->
+            <div class="carousel-item" data-bs-interval="5000">
                 <img src="assets\images\MembershipSlide2Slider1Desktop.jpg"
                     class="mx-auto d-none d-md-block w-100 center-image">
                 <img src="assets\images\MembershipSlide2Slider1Mobile.jpg"
                     class="mx-auto d-block d-md-none w-100 center-image">
                 <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center h-100">
-                    <h1 class="hero-title fw-bold mb-4">MEMBERSHIP</h1>
-                    <a href="" class="btn button-yellow fw-bold fs-5 px-5 rounded-0">JOIN NOW</a>
+                    <h1 class="hero-title fw-bold">MEMBERSHIP</h1>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">JOIN NOW</a>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="20000">
+
+            <!-- carousel 3 -->
+            <div class="carousel-item" data-bs-interval="5000">
                 <img src="assets\images\webcarousel-1920x630.jpg" class="mx-auto d-none d-md-block w-100 center-image">
                 <img src="assets\images\webcarousel-mob-750x750.jpg"
                     class="mx-auto d-block d-md-none w-100 center-image">
                 <div
                     class="carousel-overlay d-flex d-md-flex flex-column justify-content-center align-items-center h-100">
-                    <h1 class="hero-title fw-bold mb-4">BOARD NOMINATIONS OPEN</h1>
-                    <a href="" class="btn button-yellow fw-bold fs-5 px-5 rounded-0">NOMINATE NOW</a>
+                    <h1 class="hero-title fw-bold">BOARD NOMINATIONS OPEN</h1>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">NOMINATE NOW</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- sticker -->
+    <!-- Advertisement top -->
     <div class="bg-light container-fluid p-0 p-sm-4 mb-5">
         <div class="container g-0">
-            <img src="assets\images\Web-Desktop1080x180.png" class="mx-auto d-none d-sm-block img-fluid w-100">
-            <img src="assets\images\Web-Mob-750x280.png" class="mx-auto d-block d-sm-none img-fluid w-100">
+            <a href="">
+                <img src="assets\images\Web-Desktop1080x180.png" class="mx-auto d-none d-sm-block img-fluid w-100 px-3">
+                <img src="assets\images\Web-Mob-750x280.png" class="mx-auto d-block d-sm-none img-fluid w-100">
+            </a>
         </div>
     </div>
 
     <!-- Top-Images -->
     <div class="container mb-5">
-        <div class="row justify-content-center g-4">
-            <div class="col-12 col-sm-6 position-relative promotional-images">
-                <img src="assets/images/MembershipBox1.jpg" class="img-fluid">
-                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100">
-                    <h1 class=" title-height fw-bold">MEMBERSHIP</h1>
-                    <a href="#" class="btn bg-black text-white py-2 fw-bold rounded-0 px-5">
-                        JOIN / RENEW
-                    </a>
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 promotional-images">
+                <div class="position-relative">
+                    <img src="assets/images/MembershipBox1.jpg" class="img-fluid w-100">
+                    <div
+                        class="row position-absolute top-0 start-0 w-100 h-100 m-0 align-items-center text-center text-white">
+                        <div class="col-12">
+                            <h1 class="fw-bold pb-5">MEMBERSHIP</h1>
+                            <a href=""
+                                class="btn col-5 col-sm-10 col-md-6 col-lg-5 col-xl-4 bg-black text-white rounded-0 fw-bold fs-6 pb-3">JOIN/RENEW</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 position-relative promotional-images">
-                <img src="assets/images/ClubsAndSocietiesBox2.jpg" class="img-fluid w-100">
-                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100">
-                    <h1 class="title-height fw-bold">CLUBS & SOCIETIES</h1>
-                    <a href="" class="btn bg-black text-white py-2 fw-bold rounded-0 px-5">
-                        FIND OUT MORE
-                    </a>
+
+            <div class="col-12 col-sm-6 promotional-images">
+                <div class="position-relative">
+                    <img src="assets/images/ClubsAndSocietiesBox2.jpg" class="img-fluid w-100">
+                    <div
+                        class="row position-absolute top-0 start-0 w-100 h-100 m-0 align-items-center text-center text-white">
+                        <div class="col-12">
+                            <h1 class="fw-bold pb-5">CLUBS & SOCIETIES</h1>
+                            <a href=""
+                                class="btn col-5 col-sm-10 col-md-6 col-lg-5 col-xl-4 bg-black text-white rounded-0 fw-bold fs-6 pb-3">FIND
+                                OUT MORE</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,11 +148,9 @@
                         <h5 class="fw-bold">
                             WHAT'S ON
                         </h5>
-
                         <p class="card-text">
-                            Stay up to date with current and upcoming USU events.
+                            Stay up to date with current and upcoming USU events
                         </p>
-
                         <div class="text-end">
                             <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
@@ -152,11 +171,9 @@
                         <h5 class="fw-bold">
                             GET INVOLVED
                         </h5>
-
                         <p class="card-text">
-                            Check out all the opportunities available.
+                            Check out all the opportunities available
                         </p>
-
                         <div class="text-end">
                             <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
@@ -176,7 +193,7 @@
                             UNI LIFE
                         </h5>
                         <p class="card-text">
-                            Be part of the best campus experience in Australia.
+                            Be part of the best campus experience in Australia
                         </p>
                         <div class="text-end">
                             <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
@@ -199,7 +216,7 @@
                             FOOD & DRINK
                         </h5>
                         <p class="card-text">
-                            Discover the best places to eat and drink on campus.
+                            Discover the best places to eat and drink on campus
                         </p>
                         <div class="text-end">
                             <a href="#" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
@@ -215,12 +232,261 @@
 
     <!-- video -->
     <div class="container mb-5">
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col-12">
                 <iframe src="https://www.youtube.com/embed/uG8YUjN8010?si=grg5Ewyqw1kcTnPm" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-100 "></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom-Images -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 promotional-images">
+                <div class="position-relative">
+                    <img src="assets/images/OurStudentBoardDemoBox3.jpg" class="img-fluid w-100">
+                    <div
+                        class="row position-absolute top-0 start-0 w-100 h-100 m-0 align-items-center text-center text-white">
+                        <div class="col-12">
+                            <h1 class="fw-bold pb-5">OUR STUDENT BOARD</h1>
+                            <a href=""
+                                class="btn col-5 col-sm-10 col-md-6 col-lg-5 col-xl-4 bg-black text-white rounded-0 fw-bold fs-6 pb-3">FIND
+                                OUT MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 promotional-images">
+                <div class="position-relative">
+                    <img src="assets/images/VolunteerDemoBox4.jpg" class="img-fluid w-100">
+                    <div
+                        class="row position-absolute top-0 start-0 w-100 h-100 m-0 align-items-center text-center text-white">
+                        <div class="col-12">
+                            <h1 class="fw-bold pb-5">VOLUNTEER</h1>
+                            <a href=""
+                                class="btn col-5 col-sm-10 col-md-6 col-lg-5 col-xl-4 bg-black text-white rounded-0 fw-bold fs-6 pb-3">APPLY
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom-Cards -->
+    <div class="container mb-5">
+        <div class="row g-4">
+
+            <!-- card 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 rounded-0 border-0 shadow-sm">
+                    <img src="assets/images/InternationalStudentsCard5Desktop.jpg"
+                        class="card-img-top rounded-0 d-none d-sm-block">
+                    <img src="assets/images/InternationalStudentsCard5Mobile.jpg"
+                        class="card-img-top rounded-0 d-block d-sm-none">
+
+                    <div class="card-body">
+                        <h5 class="fw-bold">
+                            INTERNATIONAL STUDENTS
+                        </h5>
+                        <p class="card-text">
+                            Where to hang, make friends and get the most out of your uni experience
+                        </p>
+                        <div class="text-end">
+                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 rounded-0 border-0 shadow-sm">
+                    <img src="assets/images/KeyEventsCard6Desktop.jpg" class="card-img-top rounded-0 d-none d-sm-block">
+                    <img src="assets/images/KeyEventsCard6Mobile.jpg" class="card-img-top rounded-0 d-block d-sm-none">
+                    <div class="card-body">
+                        <h5 class="fw-bold">
+                            KEY EVENTS
+                        </h5>
+                        <p class="card-text">
+                            Check out all the events and programs that we provide.
+                        </p>
+                        <div class="text-end">
+                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 rounded-0 border-0 shadow-sm">
+                    <img src="assets/images/RewardsCard7Desktop.jpg" class="card-img-top rounded-0 d-none d-sm-block">
+                    <img src="assets/images/RewardsCard7Mobile.jpg" class="card-img-top rounded-0 d-block d-sm-none">
+                    <div class="card-body">
+                        <h5 class="fw-bold">
+                            REWARDS OFFERS
+                        </h5>
+                        <p class="card-text">
+                            Discover great offers for RewardsMembers on and off campus
+                        </p>
+                        <div class="text-end">
+                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 rounded-0 border-0 shadow-sm">
+                    <img src="assets/images/SustainabilityCard8Desktop.jpg"
+                        class="card-img-top rounded-0 d-none d-sm-block">
+                    <img src="assets/images/SustainabilityCard8Mobile.jpg"
+                        class="card-img-top rounded-0 d-block d-sm-none">
+                    <div class="card-body">
+                        <h5 class="fw-bold">
+                            SUSTAINABILITY
+                        </h5>
+                        <p class="card-text">
+                            Discover all the wayswe are building a more sustainable campus
+                        </p>
+                        <div class="text-end">
+                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- bottom carousel -->
+    <div id="carouselBottom" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBottom" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselBottom" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <!-- carousel 1 -->
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="assets\images\USYDStoreSlide1Slider2Desktop.jpg"
+                    class="mx-auto d-none d-md-block w-100 center-image">
+                <img src="assets\images\USYDStoreSlide1Slider2Mobile.jpg"
+                    class="mx-auto d-block d-md-none w-100 center-image img-fluid">
+                <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center h-100">
+                    <h1 class="hero-title fw-bold">USYD STORE</h1>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">SHOP NOW</a>
+                </div>
+            </div>
+
+            <!-- carousel 2 -->
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets\images\GradHireSlide2Slider2Desktop.jpg"
+                    class="mx-auto d-none d-md-block w-100 center-image">
+                <img src="assets\images\GradHireSlide2Slider2Mobile.jpg"
+                    class="mx-auto d-block d-md-none w-100 center-image">
+                <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center h-100">
+                    <h1 class="hero-title fw-bold">GRADUATION HIRE</h1>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">HIRE NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- web icons -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_247-5x194-45_1.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_167-5x131-59_2.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_247-5x194-45_3.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_247-5x194-45_4.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_247-5x194-45_5.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_247-5x194-45_6.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_247-5x194-45_7.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="assets\images\USU-WEB-ICONS_247-5x194-45_8.jpg" class="img-fluid w-100">
+            </div>
+        </div>
+    </div>
+
+    <!-- Advertisement bottom -->
+
+    <div class="bg-light container-fluid p-0 p-sm-4 mb-5">
+        <div class="container g-0">
+            <a href="">
+                <img src="assets\images\Web-Desktop1080x180.png" class="mx-auto d-none d-sm-block img-fluid w-100 px-3">
+                <img src="assets\images\Web-Mob-750x280.png" class="mx-auto d-block d-sm-none img-fluid w-100">
+            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-black">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>ABOUT</div>
+                    </a>
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>CONTACT</div>
+                    </a>
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>JOIN</div>
+                    </a>
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>MEMBERSHIP HELP</div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>FOOD & DRINK</div>
+                    </a>
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>USYD STORE</div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>JOBS & OPPORTUNITIES</div>
+                    </a>
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>SPONSORSHIP & ADVERTISING</div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div>DOWNLOAD OUR APP</div>
+                        <hr>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

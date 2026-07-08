@@ -1,19 +1,35 @@
+/* utilities */
+
 .bg-yellow {
   background-color: #ffdf00;
 }
 
-.button-yellow {
+.button-width {
   width: 350px;
+}
+
+/* search */
+
+.search-box{
+    width:260px;
+}
+
+.search-box:has(.collapse.show) {
+    border: 1px solid #fff;
+}
+
+.search-box .btn {
+  position: absolute;
+  right: 0;
+  border: none;
+}
+
+.search-box input {
   background-color: #ffdf00;
+  outline: none;
+  padding: 10px 0px 10px 10px;
 }
 
-.title-height {
-  height: 100px;
-}
-
-.card-text {
-  height: 50px;
-}
 
 /* fix carousel positioning */
 .carousel-overlay {
@@ -43,24 +59,32 @@
   object-position: center;
 }
 
+
+/* carousel title */
 .hero-title {
   font-size: 96px;
+  height: 150px;
 }
 
 @media (max-width: 992px) {
   .hero-title {
-    font-size: 54px;
+    font-size: 72px;
+    height: 120px;
   }
 }
 
 @media (max-width: 768px) {
-  .button-yellow {
+  .hero-title {
+    font-size: 54px;
+  }
+
+  .button-width {
     width: 300px;
   }
 }
 
 @media (max-width: 576px) {
-  .button-yellow {
+  .button-width {
     width: 250px;
   }
 
@@ -68,4 +92,13 @@
     padding: 0px;
   }
 }
+
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+
+
 
