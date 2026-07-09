@@ -17,14 +17,14 @@
 
     <!-- navbar -->
     <nav class="navbar bg-yellow">
-        <div class="container-xxl">
-            <a class="navbar-brand">
+        <div class="container-xxxl d-flex justify-content-between align-items-center">
+            <a class="navbar-brand p-3">
                 <img src="assets\images\usu_logo.png" class="img-fluid w-auto" style="height: 40px;">
             </a>
             <div class="d-flex align-items-center">
 
                 <!-- search bar -->
-                <form class="search-box position-relative d-flex align-items-center">
+                <form class="search-box position-relative d-none d-sm-flex align-items-center ">
                     <div class="collapse" id="searchCollapsed">
                         <input type="search" class="border-0 rounded-0 search-input">
                     </div>
@@ -34,15 +34,211 @@
                     </button>
                 </form>
 
-
                 <!-- menu button -->
-                <button class="btn menu-button" type="button" data-bs-toggle="collapse" data-bs-target="menuCollapsed">
-                    <i class="bi bi-list fs-1"></i>
+                <button class="btn menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
+                    aria-controls="menuOffcanvas">
+                    <i class="bi bi-list menu-open fs-1"></i>
+                    <i class="bi bi-x-lg menu-close fs-1"></i>
                 </button>
-
             </div>
         </div>
     </nav>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-top bg-black text-white" id="menuOffcanvas" data-bs-backdrop="false">
+        <div class="offcanvas-body p-0">
+            <div class="container-fluid bg-black">
+                <div class="container py-5">
+                    <div class="row">
+
+                        <!-- search mobile -->
+                        <div class="col-12 d-block d-sm-none mb-5">
+                            <form class="d-flex">
+                                <input type="search" class="form-control rounded-0 border-0" placeholder="Search">
+                                <button class="btn bg-yellow rounded-0 px-3">
+                                    <i class="bi bi-search fs-3"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- about-us -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-5">
+                            <div class="pb-3 fs-5 text-white fw-bold">About Us</div>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Our Student Board</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Sustainability</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Jobs & Opportunities</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Alumni & Friends</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Contact Us</div>
+                            </a>
+                        </div>
+
+                        <!-- Membership -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-5">
+                            <div class="pb-3 fs-5 text-white fw-bold">Membership</div>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Join / Renew</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Rewards Offers</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Membership Help</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">USU App</div>
+                            </a>
+                        </div>
+
+                        <!-- Whats on -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-5">
+                            <div class="pb-3 fs-5 text-white fw-bold">What's On</div>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Event Calendar</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Key Events</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Manning Bar</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Hermann's Bar</div>
+                            </a>
+                        </div>
+
+                        <!-- clubs & societies -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-5">
+                            <div class="pb-3 fs-5 text-white fw-bold">Clubs & Societies</div>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Clubs & Societies A-Z</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Start a club</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Event Submission</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Venue & Equipment Hire</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Clubs Portal</div>
+                            </a>
+                        </div>
+
+                        <!-- get involved -->
+                        <div class="col-12 col-md-4 col-lg-3 mb-5">
+                            <div class="pb-3 fs-5 text-white fw-bold">Get Involved</div>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Student Board Elections</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Volunteers</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">INCUBATE</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">MAD - Make a Difference</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Revues</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Debates</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Palladian Cup</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">USU Creative Awards</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">USU Markets</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Hermes</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Language Exchange</div>
+                            </a>
+                            <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                <div class="pb-2 fs-6">Student Publications</div>
+                            </a>
+                        </div>
+
+                        <div class="col-10 col-md-4 col-lg-9">
+                            <div class="row">
+
+                                <!-- uni life -->
+                                <div class="col-lg-4 mb-5 mb-md-0">
+                                    <div class="pb-3 fs-5 text-white fw-bold">Uni Life</div>
+                                    <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                        <div class="pb-2 fs-6">International Students</div>
+                                    </a>
+                                    <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                        <div class="pb-2 fs-6">Student Employment</div>
+                                    </a>
+                                    <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                        <div class="pb-2 fs-6">Student Spaces</div>
+                                    </a>
+                                    <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                        <div class="pb-2 fs-6">Verge Gallery</div>
+                                    </a>
+                                    <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                        <div class="pb-2 fs-6">WeChat</div>
+                                    </a>
+                                </div>
+
+                                <!-- shop -->
+                                <div class="col-lg-4 mb-md-0">
+                                    <div class="pb-3 fs-5 text-white fw-bold">Shop</div>
+                                    <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                        <div class="pb-2 fs-6">USYD Store</div>
+                                    </a>
+                                    <a href="" class="text-white-50 text-decoration-none fw-medium">
+                                        <div class="pb-2 fs-6">Graduation Hire</div>
+                                    </a>
+                                </div>
+
+                                <!-- food & drink -->
+                                <div class="col-lg-4 mb-md-0">
+                                    <div class="pb-3 fs-5 text-white fw-bold">Food & Drink</div>
+
+                                    <hr class="border border-white opacity-100 my-4">
+
+                                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                                        <i class="bi bi-wechat"></i>
+                                    </a>
+                                    <a href="" class="col-auto text-white text-decoration-none fs-2">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Top carousel -->
     <div id="carouselTop" class="carousel slide mb-5" data-bs-ride="carousel">
@@ -60,7 +256,7 @@
                     class="mx-auto d-block d-md-none w-100 center-image img-fluid">
                 <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center h-100">
                     <h1 class="hero-title fw-bold">USU COVID-19 UPDATE</h1>
-                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">READ LATEST UPDATE</a>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 rounded-0">READ LATEST UPDATE</a>
                 </div>
             </div>
 
@@ -72,7 +268,7 @@
                     class="mx-auto d-block d-md-none w-100 center-image">
                 <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center h-100">
                     <h1 class="hero-title fw-bold">MEMBERSHIP</h1>
-                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">JOIN NOW</a>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 rounded-0">JOIN NOW</a>
                 </div>
             </div>
 
@@ -84,7 +280,7 @@
                 <div
                     class="carousel-overlay d-flex d-md-flex flex-column justify-content-center align-items-center h-100">
                     <h1 class="hero-title fw-bold">BOARD NOMINATIONS OPEN</h1>
-                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 px-5 rounded-0">NOMINATE NOW</a>
+                    <a href="" class="btn button-width bg-yellow fw-bold fs-5 rounded-0">NOMINATE NOW</a>
                 </div>
             </div>
         </div>
@@ -144,15 +340,15 @@
                     <img src="assets/images/WhatsOnCard1Desktop.jpg" class="card-img-top rounded-0 d-none d-sm-block">
                     <img src="assets\images\WhatsOnCard1Mobile.jpg" class="card-img-top rounded-0 d-block d-sm-none">
 
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             WHAT'S ON
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Stay up to date with current and upcoming USU events
                         </p>
-                        <div class="text-end">
-                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -167,15 +363,15 @@
                         class="card-img-top rounded-0 d-none d-sm-block">
                     <img src="assets/images/GetInvolvedCard2Mobile.jpg"
                         class="card-img-top rounded-0 d-block d-sm-none">
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             GET INVOLVED
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Check out all the opportunities available
                         </p>
-                        <div class="text-end">
-                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="text-end position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -188,15 +384,15 @@
                 <div class="card h-100 rounded-0 border-0 shadow-sm">
                     <img src="assets/images/UniLifeCard3Desktop.jpg" class="card-img-top rounded-0 d-none d-sm-block">
                     <img src="assets/images/UniLifeCard3Mobile.jpg" class="card-img-top rounded-0 d-block d-sm-none">
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             UNI LIFE
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Be part of the best campus experience in Australia
                         </p>
-                        <div class="text-end">
-                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -211,15 +407,15 @@
                         class="card-img-top rounded-0 d-none d-sm-block">
                     <img src="assets/images/FoodandDrinkCard4Mobile.jpg"
                         class="card-img-top rounded-0 d-block d-sm-none">
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             FOOD & DRINK
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Discover the best places to eat and drink on campus
                         </p>
-                        <div class="text-end">
-                            <a href="#" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -289,15 +485,15 @@
                     <img src="assets/images/InternationalStudentsCard5Mobile.jpg"
                         class="card-img-top rounded-0 d-block d-sm-none">
 
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             INTERNATIONAL STUDENTS
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Where to hang, make friends and get the most out of your uni experience
                         </p>
-                        <div class="text-end">
-                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -310,15 +506,15 @@
                 <div class="card h-100 rounded-0 border-0 shadow-sm">
                     <img src="assets/images/KeyEventsCard6Desktop.jpg" class="card-img-top rounded-0 d-none d-sm-block">
                     <img src="assets/images/KeyEventsCard6Mobile.jpg" class="card-img-top rounded-0 d-block d-sm-none">
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             KEY EVENTS
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Check out all the events and programs that we provide.
                         </p>
-                        <div class="text-end">
-                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -331,15 +527,15 @@
                 <div class="card h-100 rounded-0 border-0 shadow-sm">
                     <img src="assets/images/RewardsCard7Desktop.jpg" class="card-img-top rounded-0 d-none d-sm-block">
                     <img src="assets/images/RewardsCard7Mobile.jpg" class="card-img-top rounded-0 d-block d-sm-none">
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             REWARDS OFFERS
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Discover great offers for RewardsMembers on and off campus
                         </p>
-                        <div class="text-end">
-                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -354,15 +550,15 @@
                         class="card-img-top rounded-0 d-none d-sm-block">
                     <img src="assets/images/SustainabilityCard8Mobile.jpg"
                         class="card-img-top rounded-0 d-block d-sm-none">
-                    <div class="card-body">
-                        <h5 class="fw-bold">
+                    <div class="card-body position-relative">
+                        <h5 class="fw-bold fs-6">
                             SUSTAINABILITY
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text pe-4">
                             Discover all the wayswe are building a more sustainable campus
                         </p>
-                        <div class="text-end">
-                            <a href="" class="text-dark text-decoration-none fs-3 fw-bold btn stretched-link">
+                        <div class="position-absolute bottom-0 end-0 p-1">
+                            <a href="" class="text-dark text-decoration-none fs-3 btn stretched-link">
                                 <i class="bi bi-chevron-right"></i>
                             </a>
                         </div>
@@ -448,43 +644,91 @@
         </div>
     </div>
 
+    <!-- links -->
     <div class="container-fluid bg-black">
         <div class="container py-5">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-4 col-lg-3">
                     <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>ABOUT</div>
+                        <div class="pb-3">ABOUT</div>
                     </a>
                     <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>CONTACT</div>
+                        <div class="pb-3">CONTACT</div>
                     </a>
                     <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>JOIN</div>
+                        <div class="pb-3">JOIN</div>
                     </a>
                     <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>MEMBERSHIP HELP</div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>FOOD & DRINK</div>
-                    </a>
-                    <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>USYD STORE</div>
+                        <div class="pb-3">MEMBERSHIP HELP</div>
                     </a>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-4 col-lg-3">
                     <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>JOBS & OPPORTUNITIES</div>
+                        <div class="pb-3">FOOD & DRINK</div>
                     </a>
                     <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>SPONSORSHIP & ADVERTISING</div>
+                        <div class="pb-3">USYD STORE</div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-4 col-lg-3">
                     <a href="" class="text-white text-decoration-none fw-medium">
-                        <div>DOWNLOAD OUR APP</div>
-                        <hr>
+                        <div class="pb-3">JOBS & OPPORTUNITIES</div>
+                    </a>
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div class="pb-3">SPONSORSHIP & ADVERTISING</div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <hr class="d-block d-sm-none border border-white opacity-100 my-4">
+                    <a href="" class="text-white text-decoration-none fw-medium">
+                        <div class="pb-3">DOWNLOAD OUR APP</div>
+                    </a>
+                    <div class="row">
+                        <div class="col-auto col-lg-6 col-xl-auto px-2">
+                            <img src="assets\images\app_store.png">
+                        </div>
+                        <div class="col-auto col-lg-6 col-xl-auto px-2">
+                            <img src="assets\images\play_store.png">
+                        </div>
+                    </div>
+                    <hr class="border border-white opacity-100 my-4">
+                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="" class="col-auto text-white text-decoration-none fs-2 me-1">
+                        <i class="bi bi-wechat"></i>
+                    </a>
+                    <a href="" class="col-auto text-white text-decoration-none fs-2">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="row align-items-center pt-3">
+                <div class="col-auto">
+                    <a href="" class="text-white-50 text-decoration-none small">
+                        <i class="bi bi-c-circle"></i> 2020 USU
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="" class="text-white-50 text-decoration-none small">
+                        Sitemap
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="" class="text-white-50 text-decoration-none small">
+                        Privacy Policy
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="" class="text-white-50 text-decoration-none small">
+                        Terms of Use
                     </a>
                 </div>
             </div>
